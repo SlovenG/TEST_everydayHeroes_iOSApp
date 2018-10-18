@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="380" id="KGk-i7-Jjw" customClass="ResumeTableViewCell" customModule="testEverydayHeroes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="380"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="379.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0JX-NO-oQ2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="379.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FIp-3s-lQl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resumeImage" translatesAutoresizingMaskIntoConstraints="NO" id="tNg-Fd-5mm">
+                                        <rect key="frame" x="112.5" y="10" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="7pM-Qs-GTz"/>
+                                            <constraint firstAttribute="width" constant="150" id="qip-V0-6Md"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="tNg-Fd-5mm" firstAttribute="centerX" secondItem="FIp-3s-lQl" secondAttribute="centerX" id="AwE-kg-N0a"/>
+                                    <constraint firstItem="tNg-Fd-5mm" firstAttribute="centerY" secondItem="FIp-3s-lQl" secondAttribute="centerY" id="BQD-J7-Vh2"/>
+                                    <constraint firstAttribute="height" constant="170" id="WBj-xL-YTd"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pour mettre hors tension un appareil dangereux, débranche-le ou coupe le courant." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yA4-D2-tu1">
+                                <rect key="frame" x="0.0" y="170" width="375" height="39.5"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1qs-n2-cao">
+                                <rect key="frame" x="0.0" y="209.5" width="375" height="170"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resumeImage" translatesAutoresizingMaskIntoConstraints="NO" id="71J-bz-4en">
+                                        <rect key="frame" x="112.5" y="10" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="egh-Nq-Gpu"/>
+                                            <constraint firstAttribute="width" constant="150" id="etm-kV-9mx"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="71J-bz-4en" firstAttribute="centerY" secondItem="1qs-n2-cao" secondAttribute="centerY" id="A52-67-L6W"/>
+                                    <constraint firstItem="71J-bz-4en" firstAttribute="centerX" secondItem="1qs-n2-cao" secondAttribute="centerX" id="QOm-NM-uhN"/>
+                                    <constraint firstAttribute="height" constant="170" id="ohW-3W-0XN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0JX-NO-oQ2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Hcg-bY-xCO"/>
+                    <constraint firstAttribute="trailing" secondItem="0JX-NO-oQ2" secondAttribute="trailing" id="NEA-mr-V33"/>
+                    <constraint firstAttribute="bottom" secondItem="0JX-NO-oQ2" secondAttribute="bottom" id="SYW-a7-Xdw"/>
+                    <constraint firstItem="0JX-NO-oQ2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="pOn-Ov-jNp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="40" y="46.776611694152926"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="resumeImage" width="191" height="152"/>
+    </resources>
+</document>

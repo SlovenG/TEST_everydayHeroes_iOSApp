@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScoringTableViewCell" rowHeight="200" id="KGk-i7-Jjw" customClass="ScoringTableViewCell" customModule="testEverydayHeroes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SuZ-bI-J14">
+                        <rect key="frame" x="31" y="22" width="313" height="156"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ton score final est" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGU-CI-G14">
+                                <rect key="frame" x="0.0" y="0.0" width="313" height="18"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wp-QL-fea">
+                                <rect key="frame" x="0.0" y="18" width="313" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5bG-Kd-7S7">
+                                        <rect key="frame" x="-1" y="22.5" width="315" height="55"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heartYellow" translatesAutoresizingMaskIntoConstraints="NO" id="BC3-Xd-8ba">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="LtB-aW-Sdb"/>
+                                                    <constraint firstAttribute="width" constant="51" id="O6i-h6-zIb"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heartYellow" translatesAutoresizingMaskIntoConstraints="NO" id="ZEX-RJ-fWK">
+                                                <rect key="frame" x="66" y="0.0" width="51" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="7Mj-fq-aQ2"/>
+                                                    <constraint firstAttribute="width" constant="51" id="FY6-Ll-xlK"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heartYellow" translatesAutoresizingMaskIntoConstraints="NO" id="uzO-AM-RcE">
+                                                <rect key="frame" x="132" y="0.0" width="51" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="SDu-eW-mgI"/>
+                                                    <constraint firstAttribute="width" constant="51" id="ww6-i2-YhS"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heartYellow" translatesAutoresizingMaskIntoConstraints="NO" id="XcC-yb-TGX">
+                                                <rect key="frame" x="198" y="0.0" width="51" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="51" id="bYL-w4-rVV"/>
+                                                    <constraint firstAttribute="height" constant="55" id="iQ8-zR-0Wx"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heartYellow" translatesAutoresizingMaskIntoConstraints="NO" id="L9g-GO-GAM">
+                                                <rect key="frame" x="264" y="0.0" width="51" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="51" id="9uR-iZ-YI9"/>
+                                                    <constraint firstAttribute="height" constant="55" id="TG4-5X-CUx"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="JHk-nt-qfa"/>
+                                    <constraint firstItem="5bG-Kd-7S7" firstAttribute="centerY" secondItem="6wp-QL-fea" secondAttribute="centerY" id="V3y-6O-oag"/>
+                                    <constraint firstItem="5bG-Kd-7S7" firstAttribute="centerX" secondItem="6wp-QL-fea" secondAttribute="centerX" id="Ze8-5G-FyW"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTU-oI-Bi4">
+                                <rect key="frame" x="0.0" y="118" width="313" height="38"/>
+                                <string key="text">Tu maitrises parfaitement cette scène !
+Continue comme ça ;)</string>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SuZ-bI-J14" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="91f-kS-rc7"/>
+                    <constraint firstItem="SuZ-bI-J14" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nIg-qF-tKm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="awardMessageLabel" destination="WTU-oI-Bi4" id="gMD-0Z-cSf"/>
+                <outlet property="heartStackView" destination="5bG-Kd-7S7" id="TsL-a1-6jo"/>
+                <outlet property="scoringLabel" destination="YGU-CI-G14" id="0n6-2F-JBh"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heartYellow" width="55" height="51"/>
+    </resources>
+</document>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OeV-Ja-rOo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="iHn-fB-22p">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="OeV-Ja-rOo" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vYf-W0-YRh">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="74r-a7-WcI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KX5-2j-4AC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-676" y="134"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testEverydayHeroes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zyc-pY-Nzq"/>
+                        <viewControllerLayoutGuide type="bottom" id="yYt-Ye-ZLw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoEh" translatesAutoresizingMaskIntoConstraints="NO" id="kSH-KA-PbP">
+                                <rect key="frame" x="64" y="62" width="248" height="79"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hexaVert" translatesAutoresizingMaskIntoConstraints="NO" id="YZt-4h-6Of">
+                                <rect key="frame" x="341" y="440" width="34" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="5pC-0D-uyq"/>
+                                    <constraint firstAttribute="height" constant="144" id="I31-m9-3ay"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundBottom" translatesAutoresizingMaskIntoConstraints="NO" id="Pnp-Fe-twC">
+                                <rect key="frame" x="0.0" y="579" width="375" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="G0I-mu-rTQ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hexaBleu" translatesAutoresizingMaskIntoConstraints="NO" id="mwQ-rO-mkp">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="122" id="egf-V7-x76"/>
+                                    <constraint firstAttribute="width" constant="30" id="rbT-TI-p65"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="superHero" translatesAutoresizingMaskIntoConstraints="NO" id="5Rk-as-0T8">
+                                <rect key="frame" x="98" y="175" width="180" height="201"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="UnK-eK-48E"/>
+                                    <constraint firstAttribute="height" constant="201" id="mci-va-BBb"/>
+                                </constraints>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="WK6-mb-fCw">
+                                <rect key="frame" x="167.5" y="461" width="40" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="9cZ-Kz-nlv"/>
+                                    <constraint firstAttribute="height" constant="20" id="e2a-Lf-3Hf"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXw-F1-h5s">
+                                <rect key="frame" x="62.5" y="500" width="250" height="50"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="&gt; Commencer à jouer" backgroundImage="backgroundButton"/>
+                                <connections>
+                                    <segue destination="R68-Ty-sZa" kind="show" id="x99-0E-t2N"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apprends a sauver des vies en jouant" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bb9-X6-XWH">
+                                <rect key="frame" x="16" y="387" width="343" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="27f-a4-S1w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contenu développé en partenariat avec les Sapeurs Pompiers de Paris" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22a-lF-JLS">
+                                <rect key="frame" x="85" y="603" width="269" height="44"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="path12" translatesAutoresizingMaskIntoConstraints="NO" id="gPo-SP-xF2">
+                                <rect key="frame" x="11" y="592" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="cZQ-LV-7NZ"/>
+                                    <constraint firstAttribute="width" constant="65" id="eK2-wV-9ba"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_Brigade_de_sapeurs-pompiers_de_Paris" translatesAutoresizingMaskIntoConstraints="NO" id="swI-gW-oc3">
+                                <rect key="frame" x="20" y="595" width="45" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="F8Q-wm-tgB"/>
+                                    <constraint firstAttribute="height" constant="47" id="QZV-Ty-zNW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="WK6-mb-fCw" firstAttribute="top" secondItem="bb9-X6-XWH" secondAttribute="bottom" constant="4" id="09F-Ov-dnI"/>
+                            <constraint firstAttribute="bottom" secondItem="swI-gW-oc3" secondAttribute="bottom" constant="25" id="26c-1Y-RzL"/>
+                            <constraint firstAttribute="trailing" secondItem="kSH-KA-PbP" secondAttribute="trailing" constant="63" id="3g4-nW-YXc"/>
+                            <constraint firstAttribute="trailing" secondItem="YZt-4h-6Of" secondAttribute="trailing" id="8T1-2F-yCl"/>
+                            <constraint firstItem="Pnp-Fe-twC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="8de-hq-gHc"/>
+                            <constraint firstItem="oXw-F1-h5s" firstAttribute="top" secondItem="WK6-mb-fCw" secondAttribute="bottom" constant="19" id="AML-2K-UD1"/>
+                            <constraint firstItem="5Rk-as-0T8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="98" id="CHa-ip-2tl"/>
+                            <constraint firstItem="kSH-KA-PbP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="62" id="CpG-34-4fX"/>
+                            <constraint firstItem="mwQ-rO-mkp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="D2h-Tt-guG"/>
+                            <constraint firstItem="22a-lF-JLS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="85" id="Khw-1N-46l"/>
+                            <constraint firstItem="kSH-KA-PbP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="64" id="MqI-OB-QNx"/>
+                            <constraint firstItem="WK6-mb-fCw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ohg-0Y-Yft"/>
+                            <constraint firstItem="oXw-F1-h5s" firstAttribute="top" secondItem="bb9-X6-XWH" secondAttribute="bottom" constant="43" id="SHi-Z5-dZ4"/>
+                            <constraint firstAttribute="trailing" secondItem="22a-lF-JLS" secondAttribute="trailing" constant="21" id="XkY-rU-Ekp"/>
+                            <constraint firstItem="gPo-SP-xF2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="11" id="XzS-LB-Hbd"/>
+                            <constraint firstItem="yYt-Ye-ZLw" firstAttribute="top" secondItem="gPo-SP-xF2" secondAttribute="bottom" constant="10" id="Y4C-z6-CHA"/>
+                            <constraint firstItem="Pnp-Fe-twC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aRW-bx-T8V"/>
+                            <constraint firstItem="5Rk-as-0T8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="175" id="bn9-jM-rvw"/>
+                            <constraint firstItem="bb9-X6-XWH" firstAttribute="top" secondItem="5Rk-as-0T8" secondAttribute="bottom" constant="11" id="dXk-wT-bgR"/>
+                            <constraint firstItem="mwQ-rO-mkp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dv1-d9-8r1"/>
+                            <constraint firstAttribute="trailing" secondItem="bb9-X6-XWH" secondAttribute="trailing" constant="16" id="jye-qW-z2G"/>
+                            <constraint firstItem="Pnp-Fe-twC" firstAttribute="bottom" secondItem="yYt-Ye-ZLw" secondAttribute="top" id="lXJ-bQ-1Xk"/>
+                            <constraint firstItem="oXw-F1-h5s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ncr-Zx-J2L"/>
+                            <constraint firstItem="yYt-Ye-ZLw" firstAttribute="top" secondItem="YZt-4h-6Of" secondAttribute="bottom" constant="83" id="sK5-2g-VZW"/>
+                            <constraint firstItem="bb9-X6-XWH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="tk5-WX-5NB"/>
+                            <constraint firstItem="yYt-Ye-ZLw" firstAttribute="top" secondItem="22a-lF-JLS" secondAttribute="bottom" constant="20" id="wsD-2k-VBU"/>
+                            <constraint firstItem="5Rk-as-0T8" firstAttribute="top" secondItem="kSH-KA-PbP" secondAttribute="bottom" constant="34" id="xhs-na-TGR"/>
+                            <constraint firstItem="swI-gW-oc3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="yHr-Jg-eBz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XCe-xY-Ryd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--Scène-->
+        <scene sceneID="uIQ-WF-HLp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Scène" id="R68-Ty-sZa" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lkL-GH-O3g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="317"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo_Brigade_de_sapeurs-pompiers_de_Paris" width="263" height="219"/>
+        <image name="backgroundBottom" width="375" height="91"/>
+        <image name="backgroundButton" width="250" height="50"/>
+        <image name="hexaBleu" width="30" height="122"/>
+        <image name="hexaVert" width="42" height="131"/>
+        <image name="logoEh" width="248" height="79"/>
+        <image name="path12" width="180" height="201"/>
+        <image name="superHero" width="362" height="400"/>
+    </resources>
+</document>
