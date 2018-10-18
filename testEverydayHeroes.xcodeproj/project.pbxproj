@@ -26,7 +26,6 @@
 		9B35B40821777720004DCE90 /* MultipleChoicesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B35B40621777720004DCE90 /* MultipleChoicesTableViewCell.xib */; };
 		9B35B40A217779EA004DCE90 /* extensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B35B409217779EA004DCE90 /* extensionUIView.swift */; };
 		9BFD67EA2174BC03005A2D2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFD67E92174BC03005A2D2B /* AppDelegate.swift */; };
-		9BFD67EC2174BC03005A2D2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFD67EB2174BC03005A2D2B /* ViewController.swift */; };
 		9BFD67EF2174BC03005A2D2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFD67ED2174BC03005A2D2B /* Main.storyboard */; };
 		9BFD67F12174BC04005A2D2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BFD67F02174BC04005A2D2B /* Assets.xcassets */; };
 		9BFD67F42174BC04005A2D2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFD67F22174BC04005A2D2B /* LaunchScreen.storyboard */; };
@@ -53,7 +52,6 @@
 		9B35B409217779EA004DCE90 /* extensionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionUIView.swift; sourceTree = "<group>"; };
 		9BFD67E62174BC03005A2D2B /* testEverydayHeroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testEverydayHeroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BFD67E92174BC03005A2D2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9BFD67EB2174BC03005A2D2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9BFD67EE2174BC03005A2D2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BFD67F02174BC04005A2D2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BFD67F32174BC04005A2D2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				9B35B3E921760373004DCE90 /* SceneViewController.swift */,
-				9B35B3EF217735F2004DCE90 /* AnswerTableViewCell.swift */,
 				9B35B3F121774147004DCE90 /* EndSceneViewController.swift */,
 			);
 			path = Controllers;
@@ -129,6 +126,7 @@
 				9B35B4022177712C004DCE90 /* ScoringTableViewCell.xib */,
 				9B35B40521777720004DCE90 /* MultipleChoicesTableViewCell.swift */,
 				9B35B40621777720004DCE90 /* MultipleChoicesTableViewCell.xib */,
+				9B35B3EF217735F2004DCE90 /* AnswerTableViewCell.swift */,
 			);
 			path = tableViewCells;
 			sourceTree = "<group>";
@@ -158,7 +156,6 @@
 				9B35B3E62175FD6E004DCE90 /* Controllers */,
 				9B35B3E32175FD2E004DCE90 /* Views */,
 				9BFD67E92174BC03005A2D2B /* AppDelegate.swift */,
-				9BFD67EB2174BC03005A2D2B /* ViewController.swift */,
 				9BFD67F02174BC04005A2D2B /* Assets.xcassets */,
 				9BFD67F22174BC04005A2D2B /* LaunchScreen.storyboard */,
 				9BFD67F52174BC04005A2D2B /* Info.plist */,
@@ -252,7 +249,6 @@
 				9B35B3F221774147004DCE90 /* EndSceneViewController.swift in Sources */,
 				9B35B40A217779EA004DCE90 /* extensionUIView.swift in Sources */,
 				9B35B3F721775600004DCE90 /* FirefighterInfoTableViewCell.swift in Sources */,
-				9BFD67EC2174BC03005A2D2B /* ViewController.swift in Sources */,
 				9BFD67EA2174BC03005A2D2B /* AppDelegate.swift in Sources */,
 				9B35B3F0217735F2004DCE90 /* AnswerTableViewCell.swift in Sources */,
 				9B22D64E21778D0C00039EE6 /* Plans.swift in Sources */,

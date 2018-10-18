@@ -10,7 +10,9 @@ import UIKit
 
 class SceneViewController: UIViewController {
 
+    // MARK: IBOutlets
     @IBOutlet weak var topImage: UIImageView!
+    
     @IBOutlet weak var progressBar: UIImageView!
     
     @IBOutlet weak var bottomView: UIImageView!
@@ -19,9 +21,10 @@ class SceneViewController: UIViewController {
     
     @IBOutlet weak var overlayTopConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var tableView: UITableView!
+    
     var reviewAskLabel : UILabel!
     
-    @IBOutlet weak var tableView: UITableView!
     
     var scene: Scene!
     var down = false
@@ -57,6 +60,7 @@ class SceneViewController: UIViewController {
 
     }
     
+    // MARK: Init functions
     func initTopImage() {
         
         let imageName = "maskInfo"
@@ -102,9 +106,7 @@ class SceneViewController: UIViewController {
 
         self.bottomView.subviews.forEach({ $0.removeFromSuperview() })
 
-        
         let askLabel = UILabel()
-        
         askLabel.attributedText = self.scene.currentPlan.ask
         askLabel.frame = CGRect(x: 17, y: 63, width: 342, height: 317)
         askLabel.numberOfLines = 0
@@ -146,6 +148,8 @@ class SceneViewController: UIViewController {
 
     }
     
+    
+    // MARK: Animate Overlay
     @IBAction func downOverlay(_ sender: Any) {
         
         
@@ -176,6 +180,7 @@ class SceneViewController: UIViewController {
 
     }
     
+    // MARK: Pop up ResumeView
     func popOverResume(_ isEnd: Bool = false){
         if let presentedViewController = self.storyboard?.instantiateViewController(withIdentifier: "EndScene") as? EndSceneViewController {
             presentedViewController.providesPresentationContextTransitionStyle = true
@@ -191,8 +196,7 @@ class SceneViewController: UIViewController {
     }
 }
 
-
-//
+    // MARK: TableView Delegates
 extension SceneViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if scene.currentPlan.isMultipleAnswers, !scene.currentPlan.isViewedMutlipleInfo {
@@ -224,6 +228,8 @@ extension SceneViewController : UITableViewDelegate, UITableViewDataSource {
     }
 }
 
+
+// MARK: AnswerTableViewCell Delegate
 extension SceneViewController : AnswerTableViewCellDelegate {
     func didEndPlan(_ sender: AnswerTableViewCell) {
         
@@ -238,12 +244,10 @@ extension SceneViewController : AnswerTableViewCellDelegate {
         if nbGoodAnswers == goodAnswersGiven {
             self.popOverResume()
         }
-        
     }
-    
-    
 }
 
+// MARK: MultipleChoicesTableViewCell Delegate
 extension SceneViewController: MultipleChoicesTableViewCellDelegate {
     func didCloseInfoMultiple(_ sender: MultipleChoicesTableViewCell) {
         self.scene.currentPlan.isViewedMutlipleInfo = true
@@ -255,6 +259,7 @@ extension SceneViewController: MultipleChoicesTableViewCellDelegate {
     
 }
 
+// MARK: EndSceneViewController Delegate
 extension SceneViewController : EndSceneViewControllerDelegate {
     func popOut(state: sceneState) {
         switch state {
@@ -284,6 +289,7 @@ extension SceneViewController : EndSceneViewControllerDelegate {
     
 }
 
+// MARK: Init the Fake Data ===> Communication Services Needed
 extension SceneViewController {
     func initScene(){
         self.scene = Scene()

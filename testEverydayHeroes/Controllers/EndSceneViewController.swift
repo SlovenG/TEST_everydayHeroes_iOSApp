@@ -8,19 +8,19 @@
 
 import UIKit
 
-
-
 enum sceneState {
     case redo
     case next
     case score
 }
+
 protocol EndSceneViewControllerDelegate : class {
     func popOut(state: sceneState)
 }
 
 class EndSceneViewController: UIViewController {
 
+    // MARK: IBOutlets
     @IBOutlet weak var shadowView: UIView!
     
     @IBOutlet weak var contentView: UIView!
@@ -35,12 +35,10 @@ class EndSceneViewController: UIViewController {
     @IBOutlet weak var leftFooterButton: UIButton!
     @IBOutlet weak var rightFooterButton: UIButton!
     
-    
     @IBOutlet weak var tableView: UITableView!
     
     weak var delegate: EndSceneViewControllerDelegate?
 
-    
     var resumeTitle: String!
     var currentPlan: Plans!
     var isEndScene: Bool = false
@@ -54,7 +52,6 @@ class EndSceneViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
@@ -75,6 +72,7 @@ class EndSceneViewController: UIViewController {
         
     }
     
+    // MARK: Init functions
     func initHeader(){
         if isEndScene {
             self.headerLabel.text = "Félicitations!"
@@ -124,6 +122,7 @@ class EndSceneViewController: UIViewController {
         
     }
     
+    // MARK:  Button Actions functions
     @objc func didTapedNext(_ sender: UIButton) {
         self.delegate?.popOut(state: .next)
         self.dismiss(animated: true, completion: nil)
@@ -146,6 +145,7 @@ class EndSceneViewController: UIViewController {
     }
 }
 
+    // MARK: TableView Delegates
 extension EndSceneViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if isEndScene{
@@ -184,8 +184,6 @@ extension EndSceneViewController: UITableViewDataSource, UITableViewDelegate {
         return UITableViewCell()
     }
     
-    
-    ///!!!!!!
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.row {
         case 0:
@@ -203,4 +201,3 @@ extension EndSceneViewController: UITableViewDataSource, UITableViewDelegate {
         }
     }
 }
-

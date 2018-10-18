@@ -21,7 +21,6 @@ class AnswerTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -39,9 +38,6 @@ class AnswerTableViewCell: UITableViewCell {
                 self.backgroundImg.image = UIImage(named: "backgroundFalse")
             }
         }
-        
-        
-        
     }
     
     func initCell(answer: (String,Bool)){

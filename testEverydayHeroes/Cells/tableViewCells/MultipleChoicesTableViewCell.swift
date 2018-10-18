@@ -23,7 +23,6 @@ class MultipleChoicesTableViewCell: UITableViewCell {
         
         cardView.layer.cornerRadius = 10
         cardView.addShadow()
-        
     }
     
     @IBAction func didTapedCloseInfoMultiple(_ sender: Any) {
@@ -33,7 +32,6 @@ class MultipleChoicesTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
 }
